@@ -1,0 +1,26 @@
+{
+    "name": "rollingnews-backend",
+    "version": "1.0.0",
+    "description": "proyecto de back end para la pagina de noticias RollingNews",
+    "main": "index.js",
+    "scripts": {
+        "start": "babel-node src/index.js",
+        "dev": "nodemon --exec babel-node src/index.js"
+    },
+    "keywords": [
+        "Rollingnews",
+        "noticias",
+        "back",
+        "end"
+    ],
+    "author": "Esteban Velardez, Emilia Bolognini, Veronica Auad, Emilio Hurtado, Pablo Helguera",
+    "license": "ISC",
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
