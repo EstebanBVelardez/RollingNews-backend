@@ -2,7 +2,7 @@ import moongose from 'mongoose';
 
 const url = 'mongodb://localhost:27017/RollingNews';
 
-moongose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
+moongose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
 const connection = moongose.connection;
 

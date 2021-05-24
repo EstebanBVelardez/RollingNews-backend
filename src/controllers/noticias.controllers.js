@@ -1,3 +1,5 @@
+import Noticia from '../models/noticias';
+
 const noticiasCtrl = {};
 
 noticiasCtrl.getPrueba = (req,res)=>{
