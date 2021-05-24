@@ -3,6 +3,8 @@ import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
 import './database';
+import noticiasRoutes from './routes/noticias.routes';
+
 //crear una instancia de express
 
 const app = express();
@@ -22,6 +24,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname, '../public')));
 //rutas
-app.get('/',(req,res) => {
-res.send('hola desde el servidor')
-});
+app.use('/api/noticias', noticiasRoutes)
