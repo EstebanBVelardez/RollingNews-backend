@@ -4,6 +4,7 @@ const noticiasSchema = new Schema({
     nombreNoticia: {
         type: String,
         requiered: true,
+        unique:true
     },
     fechaNoticia:{
         type: Number,
@@ -15,6 +16,6 @@ const noticiasSchema = new Schema({
     }
 });
 
-const Noticia = moongose.model('producto', noticiasSchema);
+const Noticia = moongose.model('noticia', noticiasSchema);
 
 export default Noticia
