@@ -1,18 +1,21 @@
 import moongose, {Schema} from 'mongoose';
 
 const noticiasSchema = new Schema({
-    nombreNoticia: {
-        type: String,
-        requiered: true,
-        unique:true
-    },
-    fechaNoticia:{
-        type: Number,
-        requiered:true
-    },
     categoria: {
         type: String,
+        requiered: true,
+    },
+    nombreNoticia:{
+        type: String,
+        requiered:true
+    },
+    descripcionNoticia: {
+        type: String,
         required: true
+    },
+    contenidoNoticia:{
+        type:String,
+        requiered:true
     }
 });
 

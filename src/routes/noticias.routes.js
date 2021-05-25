@@ -5,6 +5,7 @@ const router = Router();
 
 //crear las rutas
 
-router.route('/').get(noticiasCtrl.getPrueba).post(noticiasCtrl.noticiaNueva);
+router.route('/').get(noticiasCtrl.listaNoticias).post(noticiasCtrl.noticiaNueva);
+router.route('/:id').delete(noticiasCtrl.eliminarNoticias)
 
 export default router;
