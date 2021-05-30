@@ -4,6 +4,7 @@ import cors from 'cors';
 import path from 'path';
 import './database';
 import noticiasRoutes from './routes/noticias.routes';
+import routerCategoria from './routes/categoria.routes';
 
 //crear una instancia de express
 
@@ -25,3 +26,4 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname, '../public')));
 //rutas
 app.use('/api/noticias', noticiasRoutes)
+app.use('/api/categoria', routerCategoria)
