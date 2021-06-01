@@ -9,7 +9,7 @@ categoriaCtrl.prueba = (req, res) => {
 categoriaCtrl.categoriaNuevo = async (req, res) => {
   try {
     const nuevaCategoria = new Categoria({
-      titulo: req.body.titulo,
+      tituloCategoria: req.body.tituloCategoria
     });
     await nuevaCategoria.save();
     res.status(201).json({
