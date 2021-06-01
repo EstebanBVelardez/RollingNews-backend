@@ -1,7 +1,7 @@
 import moongose, {Schema} from 'mongoose';
 
 const categoriaSchema = new Schema ({
-    titulo: {
+    tituloCategoria: {
         type: String,
         requiered: true,
         unique:true
