@@ -4,7 +4,8 @@ const categoriaSchema = new Schema ({
     tituloCategoria: {
         type: String,
         requiered: true,
-        unique:true
+        unique:true,
+        maxLength:25
     }
 })
 
