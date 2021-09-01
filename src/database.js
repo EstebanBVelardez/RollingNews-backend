@@ -1,6 +1,6 @@
 import moongose from 'mongoose';
 
-const url = 'mongodb://localhost:27017/RollingNews';
+const url = 'mongodb+srv://rollingcode:rollingnews@cluster0.6ix6m.mongodb.net/test';
 
 moongose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
